@@ -1,0 +1,664 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  color: orange;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* Ensures it's above other elements */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Optional: adds a subtle shadow */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: orange;
+}
+
+nav a {
+  z-index: 555;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  position: relative;
+}
+
+nav a:hover {
+  color: #e57d1f;
+}
+
+.hero {
+  display: flex;
+  height: 95vh;
+
+  background-image: url("tirtha.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.side {
+  position: absolute;
+  right: 3rem;
+  top: 0;
+  background: #e57d1f;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 15rem;
+  height: 100%;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* for all section */
+.same {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 25px;
+  height: 90vh;
+  position: relative;
+}
+
+/* for things learnedonly */
+.samet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  margin-top: 2.5rem;
+  /* background: #000; */
+}
+
+.two-cols {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+  margin-top: 1.8rem;
+  position: relative;
+}
+
+.two-cols .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 55%;
+  /* Adjust to your design */
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  /* Start from 0 */
+  z-index: 2;
+  /* Make sure it's above the right */
+  background-color: orange;
+  border-top-right-radius: 300px;
+  border-bottom-right-radius: 300px;
+  /* optional background for visibility */
+}
+
+.abit {
+  margin-left: 10rem;
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* Shift right by 20% to let .left cover part of it */
+  width: 70%;
+  height: 100%;
+  background: red;
+  z-index: 1;
+}
+
+.right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* academics section */
+.education {
+  /* background: yellow; */
+  height: 95vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.education h1 {
+  position: absolute;
+  top: 30px;
+}
+.cols-3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 99%;
+  height: 99%;
+  margin-top: 5rem;
+}
+.common {
+  width: 33%;
+  height: 90%;
+  background: lightblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+}
+.pic {
+  width: 95%;
+  height: 50%;
+}
+.pic img {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* project section */
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 100vw;
+  height: 90vh;
+}
+.project .one {
+  width: 40%;
+  height: 90%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: left;
+  padding-left: 2.5rem;
+}
+.project .two {
+  width: 60%;
+  height: 90%;
+  padding: 10px;
+}
+.two img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.orange {
+  background: orange;
+  padding: 25px;
+  font-size: 18px;
+}
+ol {
+  padding-left: 2.5rem;
+}
+/* ol li{
+  padding-left: 25px;
+} */
+.green {
+  background: rgb(152, 221, 152);
+  padding: 25px;
+  font-size: 18px;
+}
+/* things learned */
+
+.header {
+  background-color: #feca2f;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto 20px;
+  border-radius: 5px;
+}
+
+.container {
+  display: flex;
+  /* background-color: #be4949; */
+  align-items: center;
+  height: 80%;
+  width: 85%;
+  padding: 45px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tleft {
+  flex: 1;
+  margin-right: 30px;
+  margin: 2.5rem;
+}
+
+.tleft img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.tleft .info {
+  margin-top: 10px;
+}
+.info p {
+  margin: 10px;
+}
+
+.tright {
+  flex: 2;
+  margin: 3rem;
+}
+
+.tright h2 {
+  margin-top: -10px;
+}
+
+.tright ol {
+  padding-left: 20px;
+}
+.tright ol li {
+  margin-top: 0.8rem;
+}
+
+/* contact form */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-info h2 {
+  font-size: 32px;
+  color: #2c3e50;
+}
+
+.contact-info h2 span {
+  color: orange;
+}
+
+.underline {
+  width: 60px;
+  height: 4px;
+  background-color: orange;
+  margin: 10px 0 20px 0;
+  border-radius: 2px;
+}
+
+.contact-info p {
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.info-item i {
+  color: orange;
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: white;
+  background-color: orange;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #ff9900;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+}
+
+.contact-form button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #ff9900;
+}
+.skillcontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  width: 100vw;
+}
+
+.iright,
+.ileft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 20%;
+}
+.ileft img,
+.iright img {
+  width: 90%;
+  height: 90px;
+  object-fit: fill;
+  margin-top: 15px;
+
+}
+.cont{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.cont .center{
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 5rem 3rem;
+  font-size: 16px;
+}
+.center h2{
+  font-size: 2.5rem;
+  margin-left: 8rem;
+  margin-bottom: 1.5rem;
+}
+/* experience */
+.experience{
+  height: 100%;
+  width: 100%;
+  /* background: #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.knowledge {
+  width: 60%;
+  height: 100%;
+  padding: 5rem;
+}
+.eone{
+    width: 40%;
+      height: 100%;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+}
+.eone p{
+  margin: 0.7rem;
+}
+
+.knowledge img{
+  height: 50%;
+  width: 90%;
+  object-fit: fill;
+}
+.ada{
+  height: 80vh;
+  width: 100vw;
+}
+.eor{
+font-size: 1.2rem;
+padding: 10px;
+}
+/* responsive design */
+/* Responsive Improvements */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .side {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .two-cols {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .two-cols .left,
+  .right {
+    position: relative;
+    width: 100%;
+    border-radius: 0;
+    margin: 10px 0;
+    left: 0 !important;
+  }
+
+  .education {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .cols-3 {
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+  }
+
+  .common {
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .project {
+    flex-direction: column;
+    height: auto;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .project .one,
+  .project .two {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .skillcontent {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    height: auto;
+  }
+
+  .ileft,
+  .iright {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .ileft img,
+  .iright img {
+    height: 60px;
+    width: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .tleft,
+  .tright {
+    margin: 0;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+
+  .cont .center {
+    width: 100%;
+    padding: 2rem 1rem;
+    font-size: 15px;
+  }
+
+  .center h2 {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  nav a {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .contact-info h2 {
+    font-size: 22px;
+  }
+
+  .side {
+    font-size: 18px;
+  }
+
+  .center h2 {
+    font-size: 1.8rem;
+  }
+
+  .orange,
+  .green {
+    font-size: 16px;
+    padding: 1rem;
+  }
+
+  .tleft,
+  .tright {
+    padding: 0.5rem;
+  }
+
+  .pic {
+    height: 200px;
+  }
+}
